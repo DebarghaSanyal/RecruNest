@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search_box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar_center">
+            <ul>
+                <li><a href="index.html" class="active_link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="Network.html"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/message.png" class="Message_drop" onclick="togglemsg()"><span
+                            class="Message_drop" onclick="togglemsg()">Messaging</span></a></li>
+                <li><a href="jobs.html"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="notifications.html"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar_middle">
+            <div class="n_middle">
+                <a href="Ai-bot.html"><img src="images/ai-bot.png"><span>AI</span></a>
+            </div>
+        </div>
+        <div class="navbar_right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="togglemenu()">
+            </div>
+            <div class="me" onclick="togglemenu()">Me
+                <p><img src="images/down-arrow.png" width="15px"></p>
+            </div>
+        </div>
+
+        <!-- ------------------- msg-drop -----------------------------  -->
+
+        <div class="profile-msg-wrap" id="drop_down_msg">
+            <div class="profile-msg">
+                <div class="user-msg">
+                    <img src="images/user-1.png">
+                    <div>
+                        <b>Chat Box<span>&middot;&middot;&middot; <img src="images/down-arrow.png" class="Message_drop"
+                                    onclick="togglemsg()"></span></b>
+                    </div>
+                </div>
+                <div class="search_box">
+                    <img src="images/search.png">
+                    <input type="text" placeholder="Search messages">
+                </div>
+                <hr>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-2.png">
+                    <div>
+                        <b>Mark Helzmen <span>&middot; Aug 12</span></b>
+                        <p>Mark: Hey! I am interested...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-x.png">
+                    <div>
+                        <b>Sneha Singh <span>&middot; Aug 6</span></b>
+                        <p>Sneha: Streamline your projects...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-3.png">
+                    <div>
+                        <b>Shreya Das <span>&middot; Jul 18</span></b>
+                        <p>You: Any suggestions for...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/company-logo1.png">
+                    <div>
+                        <b>PixerBlock <span>&middot; Jul 5</span></b>
+                        <p>Pixer: Elevate your tech stack...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-4.png">
+                    <div>
+                        <b>Manisha Mallik <span>&middot; Jun 30</span></b>
+                        <p>Manisha: Harness AI tools...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-z.png">
+                    <div>
+                        <b>Harsh Gupta <span>&middot; Jun 15</span></b>
+                        <p>Harsh: Explore new frameworks ?</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-y.png">
+                    <div>
+                        <b>Swastik Roy <span>&middot; April 27</span></b>
+                        <p>You: What strategies do...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/mi-logo.png">
+                    <div>
+                        <b style="font-size: 12px;">Startup marketer <span>&middot; Feb 14</span></b>
+                        <p>Startup: Apply to our...</p>
+                    </div>
+                </a>
+        
+        
+            </div>
+        </div>
+
+        <!-- ----------------profile drop down menu---------------- -->
+        <div class="profile-menu-wrap" id="profilemenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Debargha Sanyal</h3>
+                        <a href="My-profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+                <a href="Contact_us.html" class="profile-menu-link-contact">
+                    <h4>CONTACT US</h4>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!--  -------------- navbar close --------------- -->
+
+    <div class="container">
+        <!--  -------------- left-sidebar --------------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.png">
+                    <a href="My-profile.html">Debargha Sanyal</a>
+                    <h3>Front-end Web Developer</h3>
+                    <hr>
+                    <ul>
+                        <li>Your profile views<span>82</span></li>
+                        <li>Your post views<span>670</span></li>
+                        <li>Your connections<span>800</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profilelink">
+                    <a href="#"><img src="images/items.png"> My items </a>
+                    <a href="#"><img src="images/premium.png"> Try Premium </a>
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>Recent Activity</h3>
+                <a href="#"><img src="images/recent.png"> Web Development</a>
+                <a href="#"><img src="images/recent.png"> Online Learning</a>
+                <a href="#"><img src="images/recent.png"> Data Science & AI, ML</a>
+                <a href="#"><img src="images/recent.png"> Coding Challenges</a>
+                <a href="#"><img src="images/recent.png"> Group Learning</a>
+                <h3>Groups</h3>
+                <a href="#"><img src="images/group.png"> React Js & React Native</a>
+                <a href="#"><img src="images/group.png"> Artificial Intelligence</a>
+                <a href="#"><img src="images/group.png"> Data Science & AI, ML</a>
+                <a href="#"><img src="images/group.png"> JavaScript, Typescript, Angular</a>
+                <a href="#"><img src="images/group.png"> Cloud Computing, SaaS</a>
+                <h3>Followed Hashtags</h3>
+                <a href="#"><img src="images/hashtag.png"> softwaredevelopment</a>
+                <a href="#"><img src="images/hashtag.png"> webdevelopment</a>
+                <a href="#"><img src="images/hashtag.png"> metaverselearning</a>
+                <div class="discovermore">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+        <!-- ---------------- main-content -------------- -->
+        <div class="main-content">
+
+            <div class="creat_post">
+                <div class="post-input">
+                    <img src="images/user-1.png">
+                    <input type="text" placeholder="Start a post, try writing with AI">
+                </div>
+                <div>
+                    <div class="post">
+                        <li><img src="images/photo.png">Media</li>
+                        <li><img src="images/event.png">Event</li>
+                        <li><img src="images/article.png">Write article</li>
+                    </div>
+                </div>
+            </div>
+            <div class="sort_by">
+                <hr>
+                <p>Sort by: <span>Top <img src="images/down-arrow.png"></span></p>
+            </div>
+            <div class="post_of_user">
+                <div class="user_post">
+                    <img src="images/user-1.png">
+                    <div>
+                        <a href="My-profile.html">Debargha Sanyal</a>
+                        <small>Front-end Web Developer</small>
+                        <small>18 min ago</small>
+                    </div>
+                </div>
+                <p>🌐 Exciting News! 🌐
+                    Last November, I published a research paper on the Metaverse, exploring its immense potential and
+                    impact on our world.
+                    In this study, I dive into how the Metaverse is powered by advanced technologies like blockchain,
+                    AI, decentralized networks, and quantum computing 🛠️. I also tackle the challenges of digital
+                    identity, ownership,and privacy, proposing innovative solutions to navigate this new digital
+                    landscape.</p>
+                <img src="images/metaverse.png" width="100%">
+
+                <div class="post_status">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked_user">Swastik Roy and 63 others</span>
+                    </div>
+                    <div>
+                        <span>7 comment &middot; 2 reposts</span>
+                    </div>
+                </div>
+                <div class="post_activity">
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post_of_user">
+                <div class="user_post">
+                    <img src="images/user-4.png">
+                    <div>
+                        <a href="profile.html">Manisha Mallik</a>
+                        <small>SD-ll at Microsoft</small>
+                        <small>2d ago</small>
+                    </div>
+                </div>
+                <p>I'm excited to share that I've recently expanded my knowledge in the field of Generative AI. Through
+                    focused learning,
+                    I've gained insights into Generative AI, Large Language Models, and the crucial role of Responsible
+                    AI. I'm looking
+                    forward to leveraging these skills to drive innovation and contribute to the future of technology.
+                    The journey ahead
+                    looks promising!</p>
+                <img src="images/post-image-2.png" width="100%">
+
+                <div class="post_status">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked_user">Harsh Gupta and 394 others</span>
+                    </div>
+                    <div>
+                        <span>44 comment &middot; 8 reposts</span>
+                    </div>
+                </div>
+                <div class="post_activity">
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post_of_user">
+                <div class="user_post">
+                    <img src="images/user-2.png">
+                    <div>
+                        <a href="profile.html">Abhra Chatterjee</a>
+                        <small>WDE at GenixWave Labs</small>
+                        <small>2hr ago</small>
+                    </div>
+                </div>
+                <p>🚀 Exciting News! 🚀 I am thrilled to announce that I have successfully completed the "Introduction
+                    to Cloud Computing"
+                    course offered by IBM through Coursera! This achievement marks a significant milestone in my
+                    journey, and I'm excited to
+                    apply my new skills to future projects. 🚀</p>
+                <img src="images/post-image-4.png" width="100%">
+
+                <div class="post_status">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked_user">Harsh, Tanya and 78 others</span>
+                    </div>
+                    <div>
+                        <span>11 comment &middot; 1 reposts</span>
+                    </div>
+                </div>
+                <div class="post_activity">
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post_of_user">
+                <div class="user_post">
+                    <img src="images/user-3.png">
+                    <div>
+                        <a href="profile.html">Shreya Das</a>
+                        <small>SDE at DataMosaic</small>
+                        <small>55 min ago</small>
+                    </div>
+                </div>
+                <p>As a Product Matter Manager in our group project, the responsibility was to ensure the team’s efforts
+                    were strategically
+                    aligned with the project's goals. Defining product requirements, setting priorities, and efficiently
+                    allocating
+                    resources were key tasks. Acting as a key communicator between stakeholders and the development team
+                    facilitated clear,
+                    focused discussions and streamlined workflows. This role was essential in maintaining project
+                    direction, meeting user
+                    needs, and delivering a successful outcome.</p>
+                <img src="images/post-image-1.png" width="100%">
+
+                <div class="post_status">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked_user">Priyanka Banerjee and 43 others</span>
+                    </div>
+                    <div>
+                        <span>26 comment &middot; 18 reposts</span>
+                    </div>
+                </div>
+                <div class="post_activity">
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ---------------- right-sidebar -------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon" style="cursor: pointer;">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled developer</a>
+                <span>1d ago &middot; 23k readers</span>
+
+                <a href="#">Simple Energy raises $20 million</a>
+                <span>2d ago &middot; 16k readers</span>
+
+                <a href="#">Nvidia starts delivering latest chips to Indian partners for AI cloud infra</a>
+                <span>4d ago &middot; 90k readers</span>
+
+                <a href="#">DSA/Development or DSA and Development ?</a>
+                <span>6h ago &middot; 4.5k readers</span>
+
+                <a href="#">Best AI tools of 2024</a>
+                <span>18h ago &middot; 11k readers</span>
+
+                <div class="read-more-link">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot;&middot;&middot;</small>
+                <p></p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Learn about upcoming tech product launches</b>
+                <a href="#" class="ad-link">Learn more</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy & Terms</a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business Services</a>
+                <a href="#">Get the app</a>
+                <a href="#">More</a>
+
+                <div class="copyright">
+                    <img src="images/logo.png">
+                    <p>RecruNest Corporation &#169; 2024 | All rights reserved !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
