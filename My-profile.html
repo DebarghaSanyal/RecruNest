@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search_box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar_center">
+            <ul>
+                <li><a href="index.html" class="active_link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="Network.html"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/message.png" class="Message_drop" onclick="togglemsg()"><span
+                            class="Message_drop" onclick="togglemsg()">Messaging</span></a></li>
+                <li><a href="jobs.html"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="notifications.html"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar_middle">
+            <div class="n_middle">
+                <a href="Ai-bot.html"><img src="images/ai-bot.png"><span>AI</span></a>
+            </div>
+        </div>
+        <div class="navbar_right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="togglemenu()">
+            </div>
+            <div class="me" onclick="togglemenu()">Me
+                <p><img src="images/down-arrow.png" width="15px"></p>
+            </div>
+
+        </div>
+        <!-- ------------------- msg-drop -----------------------------  -->
+
+        <div class="profile-msg-wrap" id="drop_down_msg">
+            <div class="profile-msg">
+                <div class="user-msg">
+                    <img src="images/user-1.png">
+                    <div>
+                        <b>Chat Box<span>&middot;&middot;&middot; <img src="images/down-arrow.png" class="Message_drop"
+                                    onclick="togglemsg()"></span></b>
+                    </div>
+                </div>
+                <div class="search_box">
+                    <img src="images/search.png">
+                    <input type="text" placeholder="Search messages">
+                </div>
+                <hr>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-2.png">
+                    <div>
+                        <b>Mark Helzmen <span>&middot; Aug 12</span></b>
+                        <p>Mark: Hey! I am interested...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-x.png">
+                    <div>
+                        <b>Sneha Singh <span>&middot; Aug 6</span></b>
+                        <p>Sneha: Streamline your projects...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-3.png">
+                    <div>
+                        <b>Shreya Das <span>&middot; Jul 18</span></b>
+                        <p>You: Any suggestions for...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/company-logo1.png">
+                    <div>
+                        <b>PixerBlock <span>&middot; Jul 5</span></b>
+                        <p>Pixer: Elevate your tech stack...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-4.png">
+                    <div>
+                        <b>Manisha Mallik <span>&middot; Jun 30</span></b>
+                        <p>Manisha: Harness AI tools...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-z.png">
+                    <div>
+                        <b>Harsh Gupta <span>&middot; Jun 15</span></b>
+                        <p>Harsh: Explore new frameworks ?</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-y.png">
+                    <div>
+                        <b>Swastik Roy <span>&middot; April 27</span></b>
+                        <p>You: What strategies do...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/mi-logo.png">
+                    <div>
+                        <b style="font-size: 12px;">Startup marketer <span>&middot; Feb 14</span></b>
+                        <p>Startup: Apply to our...</p>
+                    </div>
+                </a>
+        
+        
+            </div>
+        </div>
+        <!-- ----------------profile drop down menu---------------- -->
+        <div class="profile-menu-wrap" id="profilemenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Debargha Sanyal</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+                <a href="Contact_us.html" class="profile-menu-link-contact">
+                    <h4>CONTACT US</h4>
+                </a>
+            </div>
+        </div>
+
+
+
+    </nav>
+
+    <!--  -------------- navbar close --------------- -->
+
+    <div class="container">
+        <div class="profile-page">
+            <div class="profile-container">
+                <img src="images/cover-pic.png" width="100%">
+                <div class="profile-content">
+                    <img src="images/user-1.png" class="profile-pic">
+                    <h1>Debargha Sanyal <img src="images/3dot.png" style="width: 4%; cursor: pointer;"></h1>
+                    <b>Front-end Web Developer
+                        <a href="#">DataMosaic</a>
+                        <img src="images/company-logo 3.png" width="30px">
+                    </b>
+                    <p>Bangalore, India &middot; <a href="#">Contact info</a></p>
+                    <p1>3760 followers &middot; 500+ connections</p1>
+
+                    <div class="profile-button">
+                        <a href="#" class="connects">Open to</a>
+                        <a href="#" class="msg">Add profile sectione</a>
+                        <a href="#" class="msg">Enhance profile</a>
+                        <a href="#" class="more">More</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--  ------------------------------- suggessions -------------------------------------- -->
+
+            <div class="my-profile-description">
+                <h2>Suggested for you</h2>
+                <b><img src="images/display.png">Private to you</b>
+                <div class="suggested-for-you">
+                    <a href="#"><img src="images/article.png">Write a summary to highlight your personality or work
+                        experience </a>
+                    <p>Including a summary could increase reach.</p>
+
+                    <div class="add-summary">
+                        <a href="#">Add a summary</a>
+                    </div>
+                    <a href="#" class="see-more-link">See more...</a>
+                </div>
+
+            </div>
+
+            <!--  ---------------------------------------- Analytics --------------------------------------- -->
+            <div class="my-profile-description">
+                <h2>Profile Analytics</h2>
+                <b><img src="images/display.png">Private to you</b>
+                <div class="metrics-container">
+                    <div class="metric">
+                        <h2>622</h2>
+                        <p>Profile Views</p>
+                        <span>Discover who's viewed your profile.</span>
+                    </div>
+                    <div class="metric">
+                        <h2>3148</h2>
+                        <p>Post Impressions</p>
+                        <span>Check out who's engaging with your posts.</span>
+                    </div>
+                    <div class="metric">
+                        <h2>24</h2>
+                        <p>Search Appearances</p>
+                        <span>See how often you appear in search results.</span>
+                    </div>
+
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show all analytics <img src="images/right-arrow.png"></a>
+            </div>
+
+            <!--  ---------------------------------------- Resources --------------------------------------- -->
+
+
+            <div class="my-profile-description">
+                <h2>Resources</h2>
+                <b><img src="images/display.png">Private to you</b>
+                <div class="profile-desc-resource">
+                    <img src="images/network.png">
+                    <div>
+                        <h3>My network</h3>
+                        <b>See and manage your connections and interests.</b>
+
+                    </div>
+                </div>
+                <hr>
+
+                <div class="profile-desc-resource">
+                    <img src="images/items.png">
+                    <div>
+                        <h3>Saved items</h3>
+                        <b>Keep track of your jobs, courses, and articles.</b>
+                    </div>
+                </div>
+                <hr>
+
+                <a href="#" class="experience-link">Show all resources <img src="images/right-arrow.png"></a>
+            </div>
+
+
+
+            <div class="post_of_user">
+                <div class="user_post">
+                    <img src="images/user-1.png">
+                    <div>
+                        <a href="#">Debargha Sanyal</a>
+                        <small>SWE at ZYX</small>
+                        <small>2d ago</small>
+                    </div>
+                </div>
+                <p>🌐 Exciting News! 🌐
+                    Last November, I published a research paper on the Metaverse, exploring its immense potential and
+                    impact on our world.
+                    In this study, I dive into how the Metaverse is powered by advanced technologies like blockchain,
+                    AI, decentralized
+                    networks, and quantum computing 🛠️. I also tackle the challenges of digital identity, ownership,
+                    and privacy, proposing
+                    innovative solutions to navigate this new digital landscape.</p>
+                <img src="images/metaverse.png" width="100%">
+
+                <div class="post_status">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked_user">Sandipan Roy and 34 others</span>
+                    </div>
+                    <div>
+                        <span>21 comment &middot; 3 reposts</span>
+                    </div>
+                </div>
+                <div class="post_activity">
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="post-show-all">Show all posts <img src="images/right-arrow.png"></a>
+            </div>
+
+
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+
+                <div class="profile-desc-row">
+                    <img src="images/company-logo 3.png">
+                    <div>
+                        <h3>Front-End Developer</h3>
+                        <h1>DataMosaic &middot; Intern</h1>
+                        <b>Feb 2024 - Jul 2024 &middot; 6 months</b>
+                        <p>Developed and enhanced user interfaces for web applications, focusing on responsive design,
+                            performance optimization,
+                            and cross-browser compatibility. Utilized HTML, CSS, and JavaScript to transform designs
+                            into functional web pages.
+
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show all experiences <img src="images/right-arrow.png"></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="images/clg.png">
+                    <div>
+                        <h3>Narula Institute of Technology</h3>
+                        <b>B.Tech, Information Technology</b>
+                        <b>2022 - 2026</b>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-desc-row">
+                    <img src="images/scl.png">
+                    <div>
+                        <h3>RAMAKRISHNA VIVEKANANDA MISSION</h3>
+                        <b>HS, Pure Science</b>
+                        <b>2020 - 2022</b>
+                    </div>
+                </div>
+                <hr>
+
+                <a href="#" class="experience-link">Show all educations <img src="images/right-arrow.png"></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Licenses & certifications</h2>
+                <div class="profile-desc-row">
+                    <img src="images/company-logo 3.png">
+                    <div>
+                        <h3>Web Development</h3>
+                        <b>DataMosaic</b>
+                        <b>Issued July 2024</b>
+                        <b>Credential ID 49XXXXXX</b>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-desc-row">
+                    <img src="images/google.png">
+                    <div>
+                        <h3>Generative AI Fundamentals</h3>
+                        <b>Google Cloud Skills Boost</b>
+                        <b>Issued Jun 2024</b>
+                        <b>Credential ID 43XXXXXX</b>
+                    </div>
+                </div>
+                <hr>
+
+                <a href="#" class="experience-link">Show all 5 licenses and certifications <img
+                        src="images/right-arrow.png"></a>
+            </div>
+
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skill">Web Development</a>
+                <a href="#" class="skill">Problem Solving</a>
+                <a href="#" class="skill">Leadership</a>
+                <a href="#" class="skill">DSA</a>
+                <a href="#" class="skill">UI/UX</a>
+                <a href="#" class="skill">Figma</a>
+                <a href="#" class="skill">Database</a>
+                <a href="#" class="skill">Linux</a>
+                <hr>
+                <a href="#" class="experience-link">Show all 15 skills <img src="images/right-arrow.png"></a>
+            </div>
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <p class="lang">English</p>
+                <p class="lang">Hindi</p>
+            </div>
+        </div>
+
+        <!-- -----------------------profile-sidebar------------- -->
+
+        <div class="profile-sidebar">
+
+            <div class="sidebar-ad">
+                <small>Ad &middot;&middot;&middot;</small>
+                <p>Master AI tools</p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Apply to start-ups</b>
+                <a href="#" class="ad-link">Learn more</a>
+            </div>
+            <!---------------------- other similer profiles------------------------->
+
+            <div class="suggessions">
+                <h3>Other similar profiles</h3>
+                <p>From your industry</p>
+                <div class="sidebar-similar-profiles">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h2>Tanya Mukherjee &middot;<span> 2nd</h2>
+                        <p>SDE at Oraclw</p>
+                        <a href="#">+ Follow</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-similar-profiles">
+                    <img src="images/user-z.png">
+                    <div>
+                        <h2>Harsh Gupta &middot;<span> 2nd</h2>
+                        <p>SD at UNOPAL TECHPUPNA</p>
+                        <a href="#">+ Follow</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-similar-profiles">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h2>Shreya Das &middot;<span> 3rd</h2>
+                        <p>SDE at DataMosaic</p>
+                        <a href="#">+ Follow</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-similar-profiles">
+                    <img src="images/user-2.png">
+                    <div>
+                        <h2>Abhra Chatterjee &middot;<span> 2nd</span></h2>
+                        <p>WDE at GenixWave Labs </p>
+                        <a href="#">+ Follow</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-similar-profiles">
+                    <img src="images/user-x.png">
+                    <div>
+                        <h2>Sneha Singh &middot;<span> 3rd</h2>
+                        <p>Data analyst at VertexHive</p>
+                        <a href="#">+ Follow</a>
+                    </div>
+                </div>
+
+                <div class="read-more-link">
+                    <p href="#">Show all</p>
+                </div>
+            </div>
+
+            <!--------------------------------people you may know ------------------->
+            <div class="suggessions">
+                <h3>People you may know</h3>
+                <p>From your industry</p>
+                <div class="sidebar-profile-row">
+                    <img src="images/user-y.png">
+                    <div>
+                        <h2>Swastik Roy</h2>
+                        <p>Manager at DataMosaic</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-profile-row">
+                    <img src="images/user-2.png">
+                    <div>
+                        <h2>Abhra Chatterjee</h2>
+                        <p>WDE at GenixWave Labs</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-profile-row">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h2>Shreya Agarwal</h2>
+                        <p>Team-Lead at VertexHive</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-profile-row">
+                    <img src="images/user-z.png">
+                    <div>
+                        <h2>Harsh Gupta</h2>
+                        <p>SD at UNOPAL TECHPUPNA</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-profile-row">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h2>Riya Ghosh</h2>
+                        <p>SE at VertexHive</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="read-more-link">
+                    <p href="#">Show all</p>
+                </div>
+            </div>
+
+            <!-- ---------------- You may like ----------------  -->
+
+            <div class="suggessions">
+                <h3>You might like</h3>
+                <p>Newsletters for you</p>
+                <div class="sidebar-similar-profiles">
+                    <img src="images/mi-logo.png">
+                    <div>
+                        <h2>Free courses with certificates</h2>
+                        <p>Learn industry level AI tools and get a hands-on experience...</p>
+                        <a href="#">+ Subscribe</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-similar-profiles">
+                    <img src="images/company-logo 4.png">
+                    <div>
+                        <h2>Build your own website </h2>
+                        <p>Get a hands-on idea of web-development, Database management and API building...</p>
+                        <a href="#">+ Subscribe</a>
+                    </div>
+                </div>
+
+                <div class="read-more-link">
+                    <p href="#">Show all</p>
+                </div>
+            </div>
+
+            <!-------------------full-img-add------------------------>
+
+            <div class="full-img-add">
+                <a href="#"><img src="images/full-ad.png" width="100%"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy & Terms</a>
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business Services</a>
+            <a href="#">Get the app</a>
+            <a href="#">More</a>
+
+            <div class="copyright">
+                <img src="images/logo.png">
+                <p>RecruNest Corporation &#169; 2024 | All rights reserved !</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  ----------------------------end-----------------------  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
