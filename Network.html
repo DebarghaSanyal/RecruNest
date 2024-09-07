@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search_box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar_center">
+            <ul>
+                <li><a href="index.html" class="active_link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="Network.html"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/message.png" class="Message_drop" onclick="togglemsg()"><span
+                            class="Message_drop" onclick="togglemsg()">Messaging</span></a></li>
+                <li><a href="jobs.html"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="notifications.html"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar_middle">
+            <div class="n_middle">
+                <a href="Ai-bot.html"><img src="images/ai-bot.png"><span>AI</span></a>
+            </div>
+        </div>
+        <div class="navbar_right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="togglemenu()">
+            </div>
+            <div class="me" onclick="togglemenu()">Me
+                <p><img src="images/down-arrow.png" width="15px"></p>
+            </div>
+        </div>
+
+        <!-- ------------------- msg-drop -----------------------------  -->
+
+        <div class="profile-msg-wrap" id="drop_down_msg">
+            <div class="profile-msg">
+                <div class="user-msg">
+                    <img src="images/user-1.png">
+                    <div>
+                        <b>Chat Box<span>&middot;&middot;&middot; <img src="images/down-arrow.png" class="Message_drop"
+                                    onclick="togglemsg()"></span></b>
+                    </div>
+                </div>
+                <div class="search_box">
+                    <img src="images/search.png">
+                    <input type="text" placeholder="Search messages">
+                </div>
+                <hr>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-2.png">
+                    <div>
+                        <b>Mark Helzmen <span>&middot; Aug 12</span></b>
+                        <p>Mark: Hey! I am interested...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-x.png">
+                    <div>
+                        <b>Sneha Singh <span>&middot; Aug 6</span></b>
+                        <p>Sneha: Streamline your projects...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-3.png">
+                    <div>
+                        <b>Shreya Das <span>&middot; Jul 18</span></b>
+                        <p>You: Any suggestions for...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/company-logo1.png">
+                    <div>
+                        <b>PixerBlock <span>&middot; Jul 5</span></b>
+                        <p>Pixer: Elevate your tech stack...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-4.png">
+                    <div>
+                        <b>Manisha Mallik <span>&middot; Jun 30</span></b>
+                        <p>Manisha: Harness AI tools...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-z.png">
+                    <div>
+                        <b>Harsh Gupta <span>&middot; Jun 15</span></b>
+                        <p>Harsh: Explore new frameworks ?</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-y.png">
+                    <div>
+                        <b>Swastik Roy <span>&middot; April 27</span></b>
+                        <p>You: What strategies do...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/mi-logo.png">
+                    <div>
+                        <b style="font-size: 12px;">Startup marketer <span>&middot; Feb 14</span></b>
+                        <p>Startup: Apply to our...</p>
+                    </div>
+                </a>
+        
+        
+            </div>
+        </div>
+
+        <!-- ----------------profile drop down menu---------------- -->
+        <div class="profile-menu-wrap" id="profilemenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Debargha Sanyal</h3>
+                        <a href="My-profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+                <a href="Contact_us.html" class="profile-menu-link-contact">
+                    <h4>CONTACT US</h4>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!--  -------------- navbar close --------------- -->
+
+
+    <div class="container">
+
+        <div class="left">
+            <!-- --------------- manage-my-network ----------------------------------------->
+            <div class="manage-my-network" id="networkmenu">
+                <h1 onclick="togglenetwork()">Manage my network
+                    <span><img src="images/down-arrow.png" alt="down" width="20px"></span>
+                </h1>
+                <div class="manage-drop-down">
+                    <ul style="list-style: none; padding: 0;">
+                        <li>
+                            <img src="images/network.png">
+                            <p>Connections <span style="float: right; margin-right: 20px; font-weight: 500;">
+                                 870</span></p>
+                        </li>
+                        <li>
+                            <img src="images/group.png">
+                            <p>Following and followers </p>
+                        </li>
+                        <li>
+                            <img src="images/group.png">
+                            <p>Groups <span style="float: right; margin-right: 20px; font-weight: 500;">
+                                   18</span></p>
+                        </li>
+                        <li>
+                            <img src="images/event.png">
+                            <p>Events<span style="float: right; margin-right: 20px; font-weight: 500;">
+                                    </span></p>
+                        </li>
+                        <li>
+                            <img src="images/article.png">
+                            <p>Pages <span style="float: right; margin-right: 20px; font-weight: 500;">
+                                     44</span></p>
+                        </li>
+                        <li>
+                            <img src="images/network.png">
+                            <p>Newletters <span style="float: right; margin-right: 20px; font-weight: 500;">
+                                     8</span></p>
+                        </li>
+                        <li>
+                            <img src="images/hashtag.png">
+                            <p>Hashtags</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- --------------- ad ----------------------------------------->
+
+            <div class="network-sidebar">
+
+                <div class="sidebar-ad">
+                    <small>Ad &middot;&middot;&middot;</small>
+                    <p>Master AI tools</p>
+                    <div>
+                        <img src="images/user-1.png">
+                        <img src="images/company-logo 3.png">
+                    </div>
+                    <b>Apply to start-ups</b>
+                    <a href="#" class="ad-link">Learn more</a>
+                </div>
+            </div>
+            <!-- ------------------- copyright -------------------------------->
+            <div class="left-ad">
+                <div class="left-sidebar">
+                    <div class="sidebar-useful-links">
+                        <a href="#">About</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Privacy & Terms</a>
+                        <a href="#">Ad Choices</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Business Services</a>
+                        <a href="#">Get the app</a>
+                        <a href="#">More</a>
+
+                        <div class="copyright">
+                            <img src="images/logo.png">
+                            <p>RecruNest Corporation &#169; 2024 | All rights reserved !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Right">
+            <div class="manage-my-network-right">
+                <div>
+                    <h1 class="list-inline-item" id="scrollButtonup">Grow network</h1>
+                    <h1 class="list-inline-item" id="scrollButton">Suggestions</h1>
+                </div>
+            </div>
+            <div class="manage-my-network-invitations" style="border-radius: 10px;">
+                <div class="invitations">
+                    <b>Invitations <span style="cursor: pointer;">See all</span></b>
+                    <hr>
+                    <div class="invitations-suggession">
+                        <img src="images/user-2.png" alt="Profile Picture">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Abhra Chatterjee</strong> follows you and is inviting you to connect.</p>
+                            <div class="r">
+                                <p>Ignore <span>Accept</span></p>
+                            </div>
+                            <p style="color: #555;font-size: 14px;">WDE at GenixWave Labs</p>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Sumit Maulikan and <strong>85 others</strong></em></p>                         
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="invitations-suggession">
+                        <img src="images/user-3.png" alt="Profile Picture">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Shreya Das</strong> follows you and is inviting you to connect.
+                            </p>
+                            <div class="r">
+                                <p>Ignore <span>Accept</span></p>
+                            </div>
+                            <p style="color: #555;font-size: 14px;">SDE at DataMosaic, Kolkata</p>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Harsh Gupta and <strong>25 others</strong></em></p>
+                    
+                        </div>
+                        
+                    </div>
+
+                    <div class="invitations-suggession">
+                        <img src="images/user-z.png" alt="Profile Picture">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Harsh Gupta</strong> follows you and is inviting you to connect.
+                            </p>
+                            <div class="r">
+                                <p>Ignore <span>Accept</span></p>
+                            </div>
+                            <p style="color: #555;font-size: 14px;">SD at UNOPAL TECHPUPNA</p>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Swastik Roy and <strong>18
+                                        others</strong></em></p>
+                    
+                        </div>
+                    
+                    </div>
+
+
+                    <div class="invitations-suggession">
+                        <img src="images/user-x.png" alt="Profile Picture">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Sneha Singh</strong> follows you and is inviting you to connect.
+                            </p>
+                            <div class="r">
+                                <p>Ignore <span>Accept</span></p>
+                            </div>
+                            <p style="color: #555;font-size: 14px;">Attended XYZ Institute of Technology, Mumbai</p>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Shreya Das and <strong>22 others</strong></em></p>
+                    
+                        </div>
+                        
+                    </div>
+                    <div class="invitations-suggession" style="border-bottom: none;margin-bottom: -1px;">
+                        <img src="images/user-y.png" alt="Profile Picture">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Swastik Roy</strong> follows you and is inviting you to connect.
+                            </p>
+                            <div class="r">
+                                <p>Ignore <span>Accept</span></p>
+                            </div>
+                            <p style="color: #555;font-size: 14px;">Manager at DataMosaic, Bangalore</p>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Tanya Mukherjee and <strong>26 others</strong></em></p>
+                    
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="manage-my-network-suggetions" style="border-radius: 9px; border: 1px solid #ccc;">
+                <div class="may-know-suggetions">
+                    <b>People you may know <span style="cursor: pointer;">See all</span></b>
+                    <div class="may-know-suggetions-partition">
+                        <div class="people-may-know-parts">
+                            <img src="images/post-image-1.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-2.png" alt="User" class="lower-banner">
+                            <h4>Sumit Maulikan</h4>
+                            <p>Programmer analyst at Xlit Zextras</p>
+                            <div class="mutual-con">
+                                <img src="images/user-z.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <span>Harsh and 18 other mutual connections</span>
+                            </div>
+                            <div class="j">
+                                <img src="images/network.png" alt="connect">
+                                <b>Connect</b>
+                            </div>
+                        </div>
+
+                        <div class="people-may-know-parts">
+                            <img src="images/post-image-2.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-4.png" alt="User" class="lower-banner">
+                            <h4>Manisha Mallik</h4>
+                            <p>Assistant-director of Sants Zkras</p>
+                            <div class="mutual-con">
+                                <img src="images/user-y.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <span>Swastik and 2 other mutual connections</span>
+                            </div>
+                            <div class="j">
+                                <img src="images/network.png" alt="connect">
+                                <b>Connect</b>
+                            </div>
+                        </div>
+
+                        <div class="people-may-know-parts">
+                            <img src="images/banner.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-y.png" alt="User" class="lower-banner">
+                            <h4>Swastik Roy</h4>
+                            <p>Manager at DataMosaic</p>
+                            <div class="mutual-con">
+                                <img src="images/user-3.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <span>Shreya Das and 18 other mutual connections</span>
+                            </div>
+                            <div class="j">
+                                <img src="images/network.png" alt="connect">
+                                <b>Connect</b>
+                            </div>
+                        </div>
+
+                        <div class="people-may-know-parts">
+                            <img src="images/post-image-4.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-5.png" alt="User" class="lower-banner">
+                            <h4>Tanya Mukherjee</h4>
+                            <p>Assistant-director of Sants Zkras</p>
+                            <div class="mutual-con">
+                                <img src="images/user-2.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <span>Abhra and 2 other mutual connections</span>
+                            </div>
+                            <div class="j">
+                                <img src="images/network.png" alt="connect">
+                                <b>Connect</b>
+                            </div>
+                        </div>
+  
+                    </div>
+                    <div class="may-know-suggetions-partition">
+                        <div class="people-may-know-parts">
+                            <img src="images/banner.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-x.png" alt="User" class="lower-banner">
+                            <h4>Sneha Singh</h4>
+                            <p>Assistant-director of Sants Zkras</p>
+                            <div class="mutual-con">
+                                <img src="images/user-5.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <span>Tanya and 22 other mutual connections</span>
+                            </div>
+                            <div class="j">
+                                <img src="images/network.png" alt="connect">
+                                <b>Connect</b>
+                            </div>
+                        </div>
+
+                        <div class="people-may-know-parts">
+                            <img src="images/full-ad.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-2.png" alt="User" class="lower-banner">
+                            <h4>Nikhil Sharma</h4>
+                            <p>Programmer analyst at PixerBlock</p>
+                            <div class="mutual-con">
+                                <img src="images/user-z.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <span>Harsh and 18 other mutual connections</span>
+                            </div>
+                            <div class="j">
+                                <img src="images/network.png" alt="connect">
+                                <b>Connect</b>
+                            </div>
+                        </div>
+                        
+                        <div class="people-may-know-parts">
+                            <img src="images/post-image-2.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-3.png" alt="User" class="lower-banner">
+                            <h4>Manisha Mallik</h4>
+                            <p>Subject matter lead at Sants Zkras</p>
+                            <div class="mutual-con">
+                                <img src="images/user-5.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <span>Swastik and 2 other mutual connections</span>
+                            </div>
+                            <div class="j">
+                                <img src="images/network.png" alt="connect">
+                                <b>Connect</b>
+                            </div>
+                        </div>
+
+                        <div class="people-may-know-parts">
+                            <img src="images/post-image-1.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-y.png" alt="User" class="lower-banner">
+                            <h4>Ravi Gupta</h4>
+                            <p>WDE at VertexHive</p>
+                            <div class="mutual-con">
+                                <img src="images/user-z.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <span>Sumit Maulikan and 8 other mutual connections</span>
+                            </div>
+                            <div class="j">
+                                <img src="images/network.png" alt="connect">
+                                <b>Connect</b>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------------------------------------------->
+
+
+            <div class="manage-my-network-suggetions" style="border-radius: 9px; border: 1px solid #ccc;">
+                <div class="may-know-suggetions">
+                    <b>Groups you may be interested in <span style="cursor: pointer;">See all</span></b>
+                    <div class="may-know-suggetions-partition">
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/metaverse - Copy.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/company-logo 2.png" alt="User" class="lower-banner" style="border-radius: 0%; border: none; padding-left: 20px;">
+                            <h4>React Developers</h4>
+                            <p>ReactJS & React Native</p>
+                            <div class="mutual-con">
+                                <span style="padding-left: 22%;">2,330,567 members</span>
+                            </div>
+                            <div class="j">
+                                <b>Join</b>
+                            </div>
+                        </div>
+
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/post-image-2.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/company-logo 4.png" alt="User" class="lower-banner"
+                                style="border-radius: 0%; border: none; padding-left: 20px;">
+                            <h4>JavaScript Developer</h4>
+                            <p>Group</p>
+                            <div class="mutual-con">
+                                <span style="padding-left: 22%;">1,272,964 members</span>
+                            </div>
+                            <div class="j">
+                                <b>Join</b>
+                            </div>
+                        </div>
+
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/metaverse - Copy.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/company-logo1.png" alt="User" class="lower-banner"
+                                style="border-radius: 0%; border: none; padding-left: 20px;">
+                            <h4>Spring Boot Developers</h4>
+                            <p>Java & Spring Boot</p>
+                            <div class="mutual-con">
+                                <span style="padding-left: 22%;">5,271,590 members</span>
+                            </div>
+                            <div class="j">
+                                <b>Join</b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="may-know-suggetions-partition">
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/full-ad.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/company-logo 3.png" alt="User" class="lower-banner"
+                                style="border-radius: 0%; border: none; padding-left: 20px;">
+                            <h4>DataMosaic</h4>
+                            <p>Web Developer Group</p>
+                            <div class="mutual-con">
+                                <span style="padding-left: 22%;">1,002,620 members</span>
+                            </div>
+                            <div class="j">
+                                <b>Join</b>
+                            </div>
+                        </div>
+
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/metaverse - Copy.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/mi-logo.png" alt="User" class="lower-banner"
+                                style="border-radius: 0%; border: none; padding-left: 20px;">
+                            <h4>UI/UX Design</h4>
+                            <p>Group</p>
+                            <div class="mutual-con">
+                                <span style="padding-left: 22%;">174,044 members</span>
+                            </div>
+                            <div class="j">
+                                <b>Join</b>
+                            </div>
+                        </div>
+
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/post-image-1.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/company-logo.png" alt="User" class="lower-banner"
+                                style="border-radius: 0%; border: none; padding-left: 20px;">
+                            <h4>UNOPAL TECHPUPNA</h4>
+                            <p>Full stack Development group</p>
+                            <div class="mutual-con">
+                                <span style="padding-left: 22%;">730,567 members</span>
+                            </div>
+                            <div class="j">
+                                <b>Join</b>
+                            </div>
+                        </div>
+                    
+                        
+                      
+                    </div>
+
+                </div>
+            </div>
+    <!---------------------------------------------------------------------------------->
+            <div class="manage-my-network-suggetions" style="border-radius: 9px; border: 1px solid #ccc;">
+                <div class="may-know-suggetions">
+                    <b>People who follow DataMosaic also follow <span style="cursor: pointer;">See all</span></b>
+                    <div class="may-know-suggetions-partition">
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/banner.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-y.png" alt="User" class="lower-banner" style="margin-left: 20px; width: 40%; border: 3px solid rgb(110, 0, 174);">
+                            <h4 style="text-align: start; margin-left: 10px;">Aniket Samanta</h4>
+                            <p style="text-align: start; margin-left: 10px;">SDE-1 at Ni-zer.ai | 20k+ Followers</p>
+                            <div class="mutual-con">
+                                <img src="images/user-2.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <img src="images/user-z.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: -10px;">
+                                <span>Followed by Harsh, Swasthik and 22 others you know</span>
+                            </div>
+                            <div class="j">
+                                <b>+ Follow</b>
+                            </div>
+                        </div>
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/post-image-2.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-2.png" alt="User" class="lower-banner"
+                                style="margin-left: 20px; width: 40%; border: 3px solid rgb(110, 0, 174);">
+                            <h4 style="text-align: start; margin-left: 10px;">Sumit Maulikan</h4>
+                            <p style="text-align: start; margin-left: 10px;">Programmer analyst at Xlit Zextras</p>
+                            <div class="mutual-con">
+                                <img src="images/user-y.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <img src="images/user-z.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: -10px;">
+                                <span>Followed by Harsh, Swasthik and 18 others you know</span>
+                            </div>
+                            <div class="j">
+                                <b>+ Follow</b>
+                            </div>
+                        </div>
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/full-ad.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-3.png" alt="User" class="lower-banner"
+                                style="margin-left: 20px; width: 40%; border: 3px solid rgb(110, 0, 174);">
+                            <h4 style="text-align: start; margin-left: 10px;">Shreya Agarwal</h4>
+                            <p style="text-align: start; margin-left: 10px;">Assistant Director and advisor at VertexHive</p>
+                            <div class="mutual-con">
+                                <img src="images/user-5.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <img src="images/user-x.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: -10px;">
+                                <span>Followed by Tanya, Sneha and 41 others you know</span>
+                            </div>
+                            <div class="j">
+                                <b>+ Follow</b>
+                            </div>
+                        </div> 
+            
+                    </div>
+                    <div class="may-know-suggetions-partition">
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/post-image-4.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-5.png" alt="User" class="lower-banner"
+                                style="margin-left: 20px; width: 40%; border: 3px solid rgb(110, 0, 174);">
+                            <h4 style="text-align: start; margin-left: 10px;">Sophia Allen</h4>
+                            <p style="text-align: start; margin-left: 10px;">Subject matter expart | 35k+ Followers</p>
+                            <div class="mutual-con">
+                                <img src="images/user-2.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <img src="images/user-4.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: -10px;">
+                                <span>Followed by Abhra, Manisha and 7 others you know</span>
+                            </div>
+                            <div class="j">
+                                <b>+ Follow</b>
+                            </div>
+                        </div>
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/post-image-1.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-z.png" alt="User" class="lower-banner"
+                                style="margin-left: 20px; width: 40%; border: 3px solid rgb(110, 0, 174);">
+                            <h4 style="text-align: start; margin-left: 10px;">Jacob Anderson</h4>
+                            <p style="text-align: start; margin-left: 10px;">SD-ll at ZYX hypertech | Influencer</p>
+                            <div class="mutual-con">
+                                <img src="images/user-y.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <img src="images/user-x.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: -10px;">
+                                <span>Followed by Swasthik, Sneha and 8 others you know</span>
+                            </div>
+                            <div class="j">
+                                <b>+ Follow</b>
+                            </div>
+                        </div>
+                        <div class="people-may-know-parts" style="flex-basis: 30%;">
+                            <img src="images/banner.png" alt="Banner" class="Banner">
+                            <br>
+                            <img src="images/user-4.png" alt="User" class="lower-banner"
+                                style="margin-left: 20px; width: 40%; border: 3px solid rgb(110, 0, 174);">
+                            <h4 style="text-align: start; margin-left: 10px;">Olivia Lewis</h4>
+                            <p style="text-align: start; margin-left: 10px;">Product Manager and Assistant marketing lead</p>
+                            <div class="mutual-con">
+                                <img src="images/user-z.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: 10px;">
+                                <img src="images/user-5.png" alt="connection" style="border-radius: 50%; width: 25px;margin-left: -10px;">
+                                <span>Followed by Harsh Gupta, Tanya and 2 others you know</span>
+                            </div>
+                            <div class="j">
+                                <b>+ Follow</b>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="see-more-suggetions-network">
+                <p>Load more suggestion...</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
