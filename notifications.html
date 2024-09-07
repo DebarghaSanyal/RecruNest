@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search_box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar_center">
+            <ul>
+                <li><a href="index.html" class="active_link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="Network.html"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/message.png" class="Message_drop" onclick="togglemsg()"><span
+                            class="Message_drop" onclick="togglemsg()">Messaging</span></a></li>
+                <li><a href="jobs.html"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="notifications.html"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar_middle">
+            <div class="n_middle">
+                <a href="Ai-bot.html"><img src="images/ai-bot.png"><span>AI</span></a>
+            </div>
+        </div>
+        <div class="navbar_right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="togglemenu()">
+            </div>
+            <div class="me" onclick="togglemenu()">Me
+                <p><img src="images/down-arrow.png" width="15px"></p>
+            </div>
+        </div>
+
+        <!-- ------------------- msg-drop -----------------------------  -->
+
+        <div class="profile-msg-wrap" id="drop_down_msg">
+            <div class="profile-msg">
+                <div class="user-msg">
+                    <img src="images/user-1.png">
+                    <div>
+                        <b>Chat Box<span>&middot;&middot;&middot; <img src="images/down-arrow.png" class="Message_drop"
+                                    onclick="togglemsg()"></span></b>
+                    </div>
+                </div>
+                <div class="search_box">
+                    <img src="images/search.png">
+                    <input type="text" placeholder="Search messages">
+                </div>
+                <hr>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-2.png">
+                    <div>
+                        <b>Mark Helzmen <span>&middot; Aug 12</span></b>
+                        <p>Mark: Hey! I am interested...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-x.png">
+                    <div>
+                        <b>Sneha Singh <span>&middot; Aug 6</span></b>
+                        <p>Sneha: Streamline your projects...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-3.png">
+                    <div>
+                        <b>Shreya Das <span>&middot; Jul 18</span></b>
+                        <p>You: Any suggestions for...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/company-logo1.png">
+                    <div>
+                        <b>PixerBlock <span>&middot; Jul 5</span></b>
+                        <p>Pixer: Elevate your tech stack...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-4.png">
+                    <div>
+                        <b>Manisha Mallik <span>&middot; Jun 30</span></b>
+                        <p>Manisha: Harness AI tools...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-z.png">
+                    <div>
+                        <b>Harsh Gupta <span>&middot; Jun 15</span></b>
+                        <p>Harsh: Explore new frameworks ?</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-y.png">
+                    <div>
+                        <b>Swastik Roy <span>&middot; April 27</span></b>
+                        <p>You: What strategies do...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/mi-logo.png">
+                    <div>
+                        <b style="font-size: 12px;">Startup marketer <span>&middot; Feb 14</span></b>
+                        <p>Startup: Apply to our...</p>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+        <!-- ----------------profile drop down menu---------------- -->
+        <div class="profile-menu-wrap" id="profilemenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Debargha Sanyal</h3>
+                        <a href="My-profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+                <a href="Contact_us.html" class="profile-menu-link-contact">
+                    <h4>CONTACT US</h4>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!--  -------------- navbar close --------------- -->
+
+
+    <div class="container">
+
+        <!--------------------------- left side ------------------------------------->
+
+        <div class="Right">
+            <div class="all_mypost_mentions">
+                <ul style="align-items: center;">
+                    <h6 onclick="selectnotification(this),applybutton1()"
+                        style="background-color:forestgreen; color: azure;">All</h6>
+                    <li onclick="selectnotification(this),applybutton2()">My posts</li>
+                    <li onclick="selectnotification(this),applybutton2()">Mentions</li>
+                    <li onclick="selectnotification(this),applybutton2()">Connections</li>
+                </ul>
+            </div>
+            <div class="manage-my-network-invitations" style="border-radius: 2%; margin-top: -1px;">
+                <div class="invitations">
+                    <div class="invitations-suggession">
+                        <img src="images/user-y.png" alt="Profile Picture" style="border: 2px solid #062896;">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Swastik Roy</strong> Posted: "Breaking
+                                Boundaries with AI" Discover how artificial intelligence is reshaping industries and
+                                unlocking new
+                                possibilities...</p>
+
+                            <div class="r">
+                                <p style="border: 1px solid #555; border-radius: 50px; padding: 5px 10px; margin-top: -18px;"
+                                    class="r1">X</p>
+                            </div>
+
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Sumit Maulikan<strong> and 25
+                                        others reacted to the post</strong></em></p>
+                            <span style="float: right; font-size: 12px; margin-top: -5px;">&middot;&middot;&middot;
+                                23min ago</span>
+
+                        </div>
+
+                    </div>
+                    <div class="invitations-suggession">
+                        <img src="images/user-5.png" alt="Profile Picture" style="border: 2px solid #062896;">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Tanya Mukherjee</strong> commented on
+                                Manisha's post.
+                            </p>
+                            <div class="r">
+                                <p class="r1"
+                                    style="border: 1px solid #555; border-radius: 50px; padding: 5px 10px; margin-top: -18px;">
+                                    X</p>
+                            </div>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><strong> Gen AI is
+                                    revolutionizing creativity and problem-solving!</strong></p>
+                            <span style="float: right; font-size: 12px; margin-top: -5px;">&middot;&middot;&middot;
+                                56min
+                                ago</span>
+                        </div>
+                    </div>
+                    <div class="invitations-suggession">
+                        <img src="images/user-z.png" alt="Profile Picture" style="border: 2px solid #062896;">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Harsh Gupta</strong> Posted: Stay ahead of
+                                the curve with the latest JavaScript features and frameworks transforming web
+                                development...
+                            </p>
+
+                            <div class="r">
+                                <p style="border: 1px solid #555; border-radius: 50px; padding: 5px 10px; margin-top: -18px;"
+                                    class="r1">X
+                                </p>
+                            </div>
+
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Sneha Singh<strong> and 36
+                                        others reacted to the post</strong></em></p>
+                            <span style="float: right; font-size: 12px; margin-top: -5px;">&middot;&middot;&middot;
+                                2hr ago</span>
+
+                        </div>
+
+                    </div>
+                    <div class="invitations-suggession">
+                        <img src="images/user-4.png" alt="Profile Picture" style="border: 2px solid #062896;">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Manisha Mallik</strong> reposted a video.
+                            </p>
+                            <div class="r">
+                                <p class="r1"
+                                    style="border: 1px solid #555; border-radius: 50px; padding: 5px 10px; margin-top: -18px;">
+                                    X</p>
+                            </div>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Shreya Das <strong>and 45
+                                        others reacted on the video</strong></em></p>
+                            <span style="float: right; font-size: 12px; margin-top: -5px;">&middot;&middot;&middot;
+                                2.5hr
+                                ago</span>
+                        </div>
+                    </div>
+                    <div class="invitations-suggession">
+                        <img src="images/user-x.png" alt="Profile Picture" style="border: 2px solid #062896;">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Sneha Singh</strong> Posted: I'm excited
+                                to share that I've recently expanded my knowledge in the field of Generative AI. Through
+                                focused learning,
+                                I've gained insights into Generative AI, Large Language Models...
+                            </p>
+
+                            <div class="r">
+                                <p style="border: 1px solid #555; border-radius: 50px; padding: 5px 10px; margin-top: -18px;"
+                                    class="r1">X
+                                </p>
+                            </div>
+
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Tanya Mukherjee<strong> and
+                                        22
+                                        others reacted to the post</strong></em></p>
+                            <span style="float: right; font-size: 12px; margin-top: -5px;">&middot;&middot;&middot;
+                                3hr ago</span>
+
+                        </div>
+
+                    </div>
+                    <div class="invitations-suggession">
+                        <img src="images/user-2.png" alt="Profile Picture" style="border: 2px solid #062896;">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Abhra Chatterjee</strong> Posted: From
+                                cloud computing to quantum breakthroughs, explore the innovations driving the future of
+                                technology...
+                            </p>
+                            <div class="r">
+                                <p class="r1"
+                                    style="border: 1px solid #555; border-radius: 50px; padding: 5px 10px; margin-top: -18px;">
+                                    X</p>
+                            </div>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Sumit Maulikan <strong>and 37
+                                        others reacted on the post</strong></em></p>
+                            <span style="float: right; font-size: 12px; margin-top: -5px;">&middot;&middot;&middot; 3hr
+                                ago</span>
+                        </div>
+                    </div>
+                    <div class="invitations-suggession">
+                        <img src="images/user-y.png" alt="Profile Picture" style="border: 2px solid #062896;">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Swastik Roy</strong> reposted a post.
+                            </p>
+                            <div class="r">
+                                <p class="r1"
+                                    style="border: 1px solid #555; border-radius: 50px; padding: 5px 10px; margin-top: -18px;">
+                                    X</p>
+                            </div>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><strong>22 reactions &middot;
+                                    11comments. </strong></p>
+                            <span style="float: right; font-size: 12px; margin-top: -5px;">&middot;&middot;&middot; 4hr
+                                ago</span>
+                        </div>
+                    </div>
+                    <div class="invitations-suggession" style="border-bottom: none;">
+                        <img src="images/user-3.png" alt="Profile Picture" style="border: 2px solid #062896;">
+                        <div class="invitations-suggession-details">
+                            <p><strong style="cursor: pointer; color: black;">Shreya Das</strong> Posted: As a Product
+                                Matter Manager in our group project, the responsibility was to ensure the team's efforts
+                                were strategically
+                                aligned with the project's goals. Defining product requirements...
+                            </p>
+                            <div class="r">
+                                <p class="r1"
+                                    style="border: 1px solid #555; border-radius: 50px; padding: 5px 10px; margin-top: -18px;">
+                                    X</p>
+                            </div>
+                            <p style="color: #555; font-size: 12px; padding-top: 5px;"><em>Swastik Roy <strong>and 66
+                                        others reacted on the post</strong></em></p>
+                            <span style="float: right; font-size: 12px; margin-top: -5px;">&middot;&middot;&middot; 5hr
+                                ago</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!---------------------------------------------------------------------------------->
+            <div class="manage-my-network-suggetions" style="border-radius: 9px; border: 1px solid #ccc;">
+                <div class="may-know-suggetions">
+                    <b style=" font-size:18px; display: flex; justify-content: center; color: #062896;">All notification
+                        catagories</b>
+                    <div class="may-know-suggetions-partition">
+                        <div class="people-may-know-parts"
+                            style="background-color: #d4ffad;flex-basis: 30%; margin-bottom: 20px; border: 2px solid forestgreen;">
+                            <h4 style="text-align: center; margin-top: 30px;">Connection posts</h4>
+                            <p style="text-align: center; margin-top: 20px;">38 notifications from your connections</p>
+                            <div class="mutual-con" style="justify-content: center;">
+                                <img src="images/user-2.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;width: 3rem;">
+                                <img src="images/user-z.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                                <img src="images/user-4.png" alt=""
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                            </div>
+                            <div class="j" style="margin-top: 20px;">
+                                <b>See all</b>
+                            </div>
+                        </div>
+                        <div class="people-may-know-parts"
+                            style="background-color: #d4ffad;flex-basis: 30%; margin-bottom: 20px; border: 2px solid forestgreen;">
+                            <h4 style="text-align: center; margin-top: 30px;">People you follow</h4>
+                            <p style="text-align: center; margin-top: 20px;">66 notifications from people you follow</p>
+                            <div class="mutual-con" style="justify-content: center;">
+                                <img src="images/user-5.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;width: 3rem;">
+                                <img src="images/user-y.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                                <img src="images/user-4.png" alt=""
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                            </div>
+                            <div class="j" style="margin-top: 20px;">
+                                <b>See all</b>
+                            </div>
+                        </div>
+                        <div class="people-may-know-parts"
+                            style="background-color: #d4ffad;flex-basis: 30%; margin-bottom: 20px; border: 2px solid forestgreen;">
+                            <h4 style="text-align: center; margin-top: 30px;">Pages you follow</h4>
+                            <p style="text-align: center; margin-top: 20px;">26 notifications from people you follow</p>
+                            <div class="mutual-con" style="justify-content: center;">
+                                <img src="images/mi-logo.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;width: 3rem;">
+                                <img src="images/company-logo 2.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                                <img src="images/company-logo.png" alt=""
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                            </div>
+                            <div class="j" style="margin-top: 20px;">
+                                <b>See all</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="may-know-suggetions-partition">
+                        <div class="people-may-know-parts"
+                            style=" background-color: #d4ffad; flex-basis: 30%; margin-bottom: 20px; border: 2px solid forestgreen;">
+                            <h4 style="text-align: center; margin-top: 30px;">Post impression and Search appearence</h4>
+                            <p style="text-align: center; margin-top: 20px;">Your post got 1.8k impressions last week.
+                                <br>You appeared in 46 searches this week.
+                            </p>
+                            <div class="mutual-con" style="justify-content: center; margin-top: 18px;">
+                                <img src="images/user-y.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;width: 3rem;">
+                                <img src="images/user-z.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                                <img src="images/company-logo 4.png" alt=""
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                            </div>
+                            <div class="j" style="margin-top: 30px;">
+                                <b>See analytics</b>
+                            </div>
+                        </div>
+                        <div class="people-may-know-parts"
+                            style="background-color: #d4ffad;flex-basis: 30%; margin-bottom: 20px; border: 2px solid forestgreen;">
+                            <h4 style="text-align: center; margin-top: 30px;">Opportunities</h4>
+                            <p style="text-align: center; margin-top: 20px;">11 job and internship opportunities from
+                                your following pages</p>
+                            <div class="mutual-con" style="justify-content: center;">
+                                <img src="images/user-1.png" alt="connection"
+                                    style="margin-bottom: -32px; border-radius: 50%;width: 4rem;">
+
+                            </div>
+                            <div class="mutual-con" style="justify-content: center;">
+                                <img src="images/mi-logo.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;width: 3rem;">
+                                <img src="images/company-logo1.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                                <img src="images/company-logo.png" alt=""
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                            </div>
+                            <div class="j" style="margin-top: 20px;">
+                                <b>View jobs</b>
+                            </div>
+                        </div>
+                        <div class="people-may-know-parts"
+                            style="background-color: #d4ffad;flex-basis: 30%; margin-bottom: 20px; border: 2px solid forestgreen;">
+                            <h4 style="text-align: center; margin-top: 30px;">Others</h4>
+                            <p style="text-align: center; margin-top: 20px;">Previous un-noticed notifications.</p>
+                            <div class="mutual-con" style="justify-content: center;">
+                                <img src="images/mi-logo.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;width: 3rem;">
+                                <img src="images/company-logo1.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                                <img src="images/company-logo 3.png" alt=""
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                            </div>
+                            <div class="mutual-con" style="justify-content: center;">
+                                <img src="images/user-4.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;width: 3rem;">
+                                <img src="images/user-2.png" alt="connection"
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                                <img src="images/user-5.png" alt=""
+                                    style="border-radius: 50%; width: 25px;margin-left: -10px; width: 3rem;">
+                            </div>
+                            <div class="j" style="margin-top: 20px;">
+                                <b>See all</b>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="see-more-suggetions-network">
+                <p>Load previous notifications...</p>
+            </div>
+
+        </div>
+
+        <!---------------------------starting of right side ---------------------->
+        <div class="left">
+
+            <!-- --------------- ad ----------------------------------------->
+
+            <div class="job-left-side">
+                <div class="job-options">
+                    <ul style="display: flex; justify-content: center;">
+                        <li>
+                            <img src="images/more.png" alt="">
+                            <a href="#">Manage notifications</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="network-sidebar">
+                <div class="sidebar-ad" style="background-color: #c5ff58;">
+                    <small>Ad &middot;&middot;&middot;</small>
+                    <p>Increase your reach & post impression</p>
+                    <div>
+                        <img src="images/user-1.png">
+                        <img src="images/company-logo 4.png">
+                    </div>
+                    <b>Free premium for 1 week</b>
+                    <a href="#" class="ad-link"
+                        style="border-style: none; background-color:rgb(227, 163, 45); color: black; padding: 10px 20px; font-weight: 550;">Try
+                        Premium</a>
+                </div>
+            </div>
+            <div class="full-img-add">
+                <a href="#"><img src="images/post-image-1.png" width="100%" style="border-radius: 10px;"></a>
+            </div>
+
+            <!-- ------------------- copyright -------------------------------->
+            <div class="left-ad">
+                <div class="left-sidebar">
+                    <div class="sidebar-useful-links">
+                        <a href="#">About</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Privacy & Terms</a>
+                        <a href="#">Ad Choices</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Business Services</a>
+                        <a href="#">Get the app</a>
+                        <a href="#">More</a>
+
+                        <div class="copyright">
+                            <img src="images/logo.png">
+                            <p>RecruNest Corporation &#169; 2024 | All rights reserved !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
