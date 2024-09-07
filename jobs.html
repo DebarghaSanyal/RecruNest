@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search_box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar_center">
+            <ul>
+                <li><a href="index.html" class="active_link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="Network.html"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/message.png" class="Message_drop" onclick="togglemsg()"><span class="Message_drop"
+                            onclick="togglemsg()">Messaging</span></a></li>
+                <li><a href="jobs.html"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="notifications.html"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar_middle">
+            <div class="n_middle">
+                <a href="Ai-bot.html"><img src="images/ai-bot.png"><span>AI</span></a>
+            </div>
+        </div>
+        <div class="navbar_right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="togglemenu()" >
+            </div>
+            <div class="me" onclick="togglemenu()">Me
+                <p><img src="images/down-arrow.png" width="15px"></p>
+            </div>
+        </div>
+
+        <!-- ------------------- msg-drop -----------------------------  -->
+
+        <div class="profile-msg-wrap" id="drop_down_msg">
+            <div class="profile-msg">
+                <div class="user-msg">
+                    <img src="images/user-1.png">
+                    <div>
+                        <b>Chat Box<span>&middot;&middot;&middot; <img src="images/down-arrow.png" class="Message_drop"
+                                    onclick="togglemsg()"></span></b>
+                    </div>
+                </div>
+                <div class="search_box">
+                    <img src="images/search.png">
+                    <input type="text" placeholder="Search messages">
+                </div>
+                <hr>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-2.png">
+                    <div>
+                        <b>Mark Helzmen <span>&middot; Aug 12</span></b>
+                        <p>Mark: Hey! I am interested...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-x.png">
+                    <div>
+                        <b>Sneha Singh <span>&middot; Aug 6</span></b>
+                        <p>Sneha: Streamline your projects...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-3.png">
+                    <div>
+                        <b>Shreya Das <span>&middot; Jul 18</span></b>
+                        <p>You: Any suggestions for...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/company-logo1.png">
+                    <div>
+                        <b>PixerBlock <span>&middot; Jul 5</span></b>
+                        <p>Pixer: Elevate your tech stack...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-4.png">
+                    <div>
+                        <b>Manisha Mallik <span>&middot; Jun 30</span></b>
+                        <p>Manisha: Harness AI tools...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-z.png">
+                    <div>
+                        <b>Harsh Gupta <span>&middot; Jun 15</span></b>
+                        <p>Harsh: Explore new frameworks ?</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-y.png">
+                    <div>
+                        <b>Swastik Roy <span>&middot; April 27</span></b>
+                        <p>You: What strategies do...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/mi-logo.png">
+                    <div>
+                        <b style="font-size: 12px;">Startup marketer <span>&middot; Feb 14</span></b>
+                        <p>Startup: Apply to our...</p>
+                    </div>
+                </a>
+        
+        
+            </div>
+        </div>
+
+        <!-- ----------------profile drop down menu---------------- -->
+        <div class="profile-menu-wrap" id="profilemenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Debargha Sanyal</h3>
+                        <a href="My-profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+                <a href="Contact_us.html" class="profile-menu-link-contact">
+                    <h4>CONTACT US</h4>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!--  -------------- navbar close --------------- -->
+
+    <div class="container">
+        <!--  -------------- left-sidebar --------------- -->
+        
+        <div class="job-left-side">
+            <div class="job-options">
+                <ul>
+                    <li>
+                        <img src="images/jobs.png" style="width: 32px; height: 32px;">
+                        <a href="#" style="margin-left: 0;">My jobs</a>
+                    </li>
+                    <li>
+                        <img src="images/preference.png" alt="">
+                        <a href="#">Preferences</a>
+                    </li>
+                    <li>
+                        <img src="images/more.png" alt="">
+                        <a href="#">Skill Assessments</a>
+                    </li>
+                    <li>
+                        <img src="images/article.png" alt="">
+                        <a href="#">Interview prep</a>
+                    </li>
+                    <li>
+                        <img src="images/video.png" alt="">
+                        <a href="#">Job seeker guidance</a>
+                    </li>
+                </ul>
+            </div>
+            <p>
+                <img src="images/event.png" alt="">
+                Post a free job
+            </p>
+        </div>
+
+        <!-- ---------------- main-content -------------- -->
+        
+        <div class="job-mid">
+            <div class="filter_jobs" onclick="toggleFilterSuggestions()">
+                    <b>Filter jobs</b>
+                    <img src="images/down-arrow.png" alt="->">
+            </div>
+            <div class="creat_post">
+                <div class="post-input" style="border-left: 1px solid #ccc; border-right: 1px solid #ccc;">
+                    <img src="images/user-1.png">
+                    
+                    <input type="text" placeholder=" Search jobs">
+                </div>
+            </div>
+            <div class="filter_job_suggestions">
+                <ul>
+                    <li onclick="selectLi(this)">Location</li>
+                    <li onclick="selectLi(this)">Industry</li>
+                    <li onclick="selectLi(this)">Title</li>
+                    <li onclick="selectLi(this)">Skill</li>
+                    <li onclick="selectLi(this)">Company</li>
+                    <li onclick="selectLi(this)">Position</li>
+                    <li onclick="selectLi(this)">Salary</li>
+                    <li onclick="selectLi(this)">Job type</li>
+                    <li onclick="selectLi(this)">More</li>
+                </ul>
+                <div class="invitations-suggession" style="border-bottom: none;">  
+                    <div class="r">
+                        <span style="float: right; margin-top: -10px; border-width: 2px; padding: 5px 20px 5px;border-radius: 10px;"
+                        onclick="applybutton()">Apply</span>
+                    </div>               
+                </div>
+            </div>
+            <div class="filter-job-suggestions-2nd">
+                <b>Suggested job searches <span style="cursor: pointer; float: right;margin-right: 20px;">X</span></b>
+                <div class="filter_newjob_suggestions">
+                    <ul>
+                        <li onclick="selectLi(this)"><img src="images/search.png">Remote</li>
+                        <li onclick="selectLi(this)"><img src="images/search.png">Hybrid</li>
+                        <li onclick="selectLi(this)"><img src="images/search.png">Sales</li>
+                        <li onclick="selectLi(this)"><img src="images/search.png">Marketing</li>
+                        <li onclick="selectLi(this)"><img src="images/search.png">High paying</li>
+                        <li onclick="selectLi(this)"><img src="images/search.png">Demand</li>
+                        <li onclick="selectLi(this)"><img src="images/search.png">SDE</li>
+                        <li onclick="selectLi(this)"><img src="images/search.png">SWE</li>
+                        <li onclick="selectLi(this)"><img src="images/search.png">SD</li>
+                        <li onclick="selectLi(this)"><img src="images/search.png">Web developer</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="try-premium-job">
+                <div class="invitations-suggession" style="border-bottom: none;">
+                    <img src="images/user-1.png" alt="Profile Picture" style="width: 50px;">
+                    <div class="invitations-suggession-details" style="margin-bottom: 20px;">
+                        <strong style="cursor: pointer; color: black;">Unlock the full list of jobs where you're a top applicant</strong>
+                        <p style="color: #555;font-size: 14px; margin-top: 10px;"><img src="images/user-2.png"><img src="images/user-y.png" style="margin-left: -20px;"><img src="images/user-z.png" style="margin-left: -20px;">
+                            Harsh, Swastik and thousands of other members use Premium</p>
+                    </div>
+                    <b>Try Premium for free (1-week free trial)</b>
+                </div>
+            </div>
+            <div class="job_options">
+                <b style="color: #111; font-size: 18px; padding-left: 20px; display: flex; margin-top: 20px;">Hiring in your network</b>
+                <p style="padding-left: 20px; font-size: 14px;">Explore relevant jobs in your network</p>
+                <div class="invitations-suggession" style="margin-top: 20px;">
+                    <img src="images/company-logo.png" style="width: 50px; border-radius: 0; margin-right: 20px;">
+                    <div class="invitations-suggession-details">
+                        <strong style="cursor: pointer; color: black;">Full-Stack web developer 
+                            <span style="float: right; margin-right: 20px; border: 1.4px solid #0943a0; border-radius: 30px; padding: 5px 10px; font-size: 14px; cursor: pointer;">Apply</span>
+                        </strong>
+                        <p style="font-size: 14px; margin-top: 5px;">UNOPAL TECHPUPNA <p style="color: #555; font-size: 13px;">Mumbai, Maharashtra, India (on-site)</p></p>
+                        <p style="color: #555;font-size: 14px; margin-top: 10px;"><img src="images/user-2.png"><img
+                                src="images/user-y.png" style="margin-left: -20px;"><img src="images/user-3.png"
+                                style="margin-left: -20px;">
+                            Swastik and 5 others with the hiring team</p>
+                    </div>
+                </div>
+                <div class="invitations-suggession" style="margin-top: 20px;">
+                    <img src="images/company-logo 2.png" style="width: 50px; border-radius: 0; margin-right: 20px;">
+                    <div class="invitations-suggession-details">
+                        <strong style="cursor: pointer; color: black;">ReactJS & NodeJS developer
+                            <span
+                                style="float: right; margin-right: 20px; border: 1.4px solid #0943a0; border-radius: 30px; padding: 5px 10px; font-size: 14px; cursor: pointer;">Apply</span>
+                        </strong>
+                        <p style="font-size: 14px; margin-top: 5px;">GenixWave Labs
+                        <p style="color: #555; font-size: 13px;">Bhubaneswar, Odisha, India (on-site)</p>
+                        </p>
+                        <p style="color: #555;font-size: 14px; margin-top: 10px;"><img src="images/user-4.png">
+                            Manisha Mallik and 2 others with the hiring team</p>
+                    </div>
+                </div>
+                <div class="invitations-suggession" style="margin-top: 20px;">
+                    <img src="images/company-logo 4.png" style="width: 50px; border-radius: 0; margin-right: 20px;">
+                    <div class="invitations-suggession-details">
+                        <strong style="cursor: pointer; color: black;">Spring Boot developer
+                            <span
+                                style="float: right; margin-right: 20px; border: 1.4px solid #0943a0; border-radius: 30px; padding: 5px 10px; font-size: 14px; cursor: pointer;">Apply</span>
+                        </strong>
+                        <p style="font-size: 14px; margin-top: 5px;">VertexHive
+                        <p style="color: #555; font-size: 13px;">Hydrabad, Telengana, India (on-site)</p>
+                        </p>
+                        <p style="color: #555;font-size: 14px; margin-top: 10px;"><img src="images/user-5.png"><img src="images/user-z.png"
+                                style="margin-left: -20px;">
+                            Tanya and 3 others with the hiring team</p>
+                    </div>
+                </div>
+                <h6 style="display: flex; justify-content: center; font-size: 16px; color: #333; font-weight: 550; padding: 15px; cursor: pointer; margin-top: -10px;">Show all <img src="images/right-arrow.png" style="width: 4%; align-items: center;margin-left: 10px;"></h6>
+            </div>
+            <div class="job-left-side">
+                <p>
+                    Show more results
+                </p>
+            </div>
+        </div>
+
+        <!-- ---------------- right-sidebar -------------- -->
+
+        <div class="job-right-side">
+            <div class="sidebar-ad">
+                <small>Ad &middot;&middot;&middot;</small>
+                <p>Master AI tools</p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Apply to start-ups</b>
+                <a href="#" class="ad-link">Learn more</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy & Terms</a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business Services</a>
+                <a href="#">Get the app</a>
+                <a href="#">More</a>
+            
+                <div class="copyright">
+                    <img src="images/logo.png">
+                    <p>RecruNest Corporation &#169; 2024 | All rights reserved !</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
