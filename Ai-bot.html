@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(0, 0, 0);height: 90vh;">
+
+    <nav class="navbar" style="background-color:rgb(50, 46, 46);">
+        <div class="navbar_left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search_box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar_center" style="background-color: aliceblue;">
+            <ul>
+                <li><a href="index.html" class="active_link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="Network.html"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/message.png" class="Message_drop" onclick="togglemsg()"><span class="Message_drop"
+                            onclick="togglemsg()">Messaging</span></a></li>
+                <li><a href="jobs.html"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="notifications.html"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar_middle">
+            <div class="n_middle">
+                <a href="Ai-bot.html"><img src="images/ai-bot.png" style="border-radius: 50%;"><span style="color: aliceblue;">AI</span></a>
+            </div>
+        </div>
+        <div class="navbar_right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="togglemenu()" >
+            </div>
+            <div class="me" onclick="togglemenu()" style="color: aliceblue;">Me
+                <p><img src="images/down-arrow.png" width="15px" style="filter: brightness(500%);"></p>
+            </div>
+        </div>
+
+        <!-- ------------------- msg-drop -----------------------------  -->
+
+        <div class="profile-msg-wrap" id="drop_down_msg">
+            <div class="profile-msg">
+                <div class="user-msg">
+                    <img src="images/user-1.png">
+                    <div>
+                        <b>Chat Box<span>&middot;&middot;&middot; <img src="images/down-arrow.png" class="Message_drop"
+                                    onclick="togglemsg()"></span></b>
+                    </div>
+                </div>
+                <div class="search_box">
+                    <img src="images/search.png">
+                    <input type="text" placeholder="Search messages">
+                </div>
+                <hr>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-2.png">
+                    <div>
+                        <b>Mark Helzmen <span>&middot; Aug 12</span></b>
+                        <p>Mark: Hey! I am interested...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-x.png">
+                    <div>
+                        <b>Sneha Singh <span>&middot; Aug 6</span></b>
+                        <p>Sneha: Streamline your projects...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-3.png">
+                    <div>
+                        <b>Shreya Das <span>&middot; Jul 18</span></b>
+                        <p>You: Any suggestions for...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/company-logo1.png">
+                    <div>
+                        <b>PixerBlock <span>&middot; Jul 5</span></b>
+                        <p>Pixer: Elevate your tech stack...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-4.png">
+                    <div>
+                        <b>Manisha Mallik <span>&middot; Jun 30</span></b>
+                        <p>Manisha: Harness AI tools...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-z.png">
+                    <div>
+                        <b>Harsh Gupta <span>&middot; Jun 15</span></b>
+                        <p>Harsh: Explore new frameworks ?</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/user-y.png">
+                    <div>
+                        <b>Swastik Roy <span>&middot; April 27</span></b>
+                        <p>You: What strategies do...</p>
+                    </div>
+                </a>
+                <a href="#" class="profile-msg-link">
+                    <img src="images/mi-logo.png">
+                    <div>
+                        <b style="font-size: 12px;">Startup marketer <span>&middot; Feb 14</span></b>
+                        <p>Startup: Apply to our...</p>
+                    </div>
+                </a>
+        
+        
+            </div>
+        </div>
+
+        <!-- ----------------profile drop down menu---------------- -->
+        <div class="profile-menu-wrap" id="profilemenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Debargha Sanyal</h3>
+                        <a href="My-profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+                <a href="Contact_us.html" class="profile-menu-link-contact">
+                    <h4>CONTACT US</h4>
+                </a>
+                
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!--  -------------- navbar close --------------- -->
+
+    <div class="container" style="display: flex; padding: 12px 10px;">
+        <aside class="sidebar-ai" id="historyActivity">
+            <div class="sidebar">
+                <h2>GṛdhraI <span onclick="togglehistory()">X</span></h2>
+                <ol>
+                    <li><a href="#">Latest AI trends 2024</a></li>
+                    <li><a href="#">Upcoming tech product launches</a></li>
+                    <li><a href="#">Tech market analysis reports</a></li>
+                    <li><a href="#">Cloud computing advancements 2024</a></li>
+                    <li><a href="#">Effective email marketing campaigns</a></li>
+                    <li><a href="#">Frontend Project vs DSA</a></li>
+                    <li><a href="#">Future of quantum computing</a></li>
+                    <li><a href="#">Tech company stock performance</a></li>
+                    <li><a href="#">Increase engagement</a></li>
+                    <li><a href="#">Comparing REST vs. GraphQL</a></li>
+                    <li><a href="#">SEO strategies for developers</a></li>
+                    <li><a href="#">Today's job market</a></li>
+                </ol>
+            </div>
+            <p>Try Premium</p>
+        </aside>
+        <main class="main-content-ai">
+            <h4 style="color: rgb(103, 104, 105);" onclick="togglehistory()"><img src="images/3dot.png">GṛdhraI - Your Personal AI Assistant: Ask Anything, Grow Professionally</h4>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <div class="card-title">How networking helps you grow and connect efficiently</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✍️</div>
+                    <div class="card-title">How to increase post impressions</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <div class="card-title">Best technologies to learn in 2024</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔍</div>
+                    <div class="card-title">Key skills needed in today's job market</div>
+                </div>
+            </div>
+            <footer class="footer">
+                <input type="text" class="message-input" placeholder="Discover with GṛdhraI">
+            </footer>
+        </main>
+        <div class="sidebar-useful-links" style="margin-left: 18%; order: 2; margin-top: -50px;">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy & Terms</a>
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business Services</a>
+            <a href="#">Get the app</a>
+            <a href="#">More</a>
+        
+            <div class="copyright">
+                <img src="images/logo.png">
+                <p>RecruNest Corporation &#169; 2024 | All rights reserved !</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
