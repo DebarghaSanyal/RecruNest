@@ -2303,8 +2303,8 @@ a {
         
     /*================= my-profile =====================*/
 
-    .profile-page,.profile-sidebar{
-        max-width: 100%;
+    .profile-page{
+        flex-basis: 100%;
     }
     .profile-container{
         font-size: 14px;
