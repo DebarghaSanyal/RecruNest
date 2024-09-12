@@ -11,15 +11,15 @@ iv. Job Section: A dedicated space to explore job listings, apply for positions,
 v. Notifications: Get notifications for job postings and opportunities tailored to user interests.\
 vi. AI-Chatbot Integration: An AI chatbot (GṛdhraI) to assist users with platform navigation, job searches, and more.\
 vii. User Profiles: Users can create and edit their profiles with career-related information, showcasing their skills, experience, and achievements.\
-viii. Contact Us: If you have any questions or feedback, feel free to reach out.\
+viii. Contact Us: If you have any questions or feedback, feel free to reach out.
 
 Technologies Used:-\
 i. HTML5: For structuring the content.\
 ii. CSS3: To design a responsive and visually appealing layout.\
-iii. JavaScript (Vanilla): To handle user interactions, dynamic content updates, and AI-bot functionalities.\
+iii. JavaScript (Vanilla): To handle user interactions, dynamic content updates, and AI-bot functionalities.
 
 Responsive Design:-\
-RecruNest is fully responsive and adapts seamlessly to different screen sizes, providing a smooth user experience on desktop, tablet, and mobile devices.\
+RecruNest is fully responsive and adapts seamlessly to different screen sizes, providing a smooth user experience on desktop, tablet, and mobile devices.
 
 Contact:-\
 If you have any questions or feedback, feel free to reach out:
